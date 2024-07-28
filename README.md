@@ -15,9 +15,11 @@ $$
 
 This [paper](https://arxiv.org/abs/2106.09685), where *LoRA* is proposed offers a more efficient alternative to computing the weight updates *ΔW*
 by learning an approximation of it; *ΔW ≈ AB*. In other words, in *LoRA*, we have the following:
+
 $$
 W_{updated} = W + A.B
 $$
+
 where *A* and *B* are two small weight matrices. The figure below illustrates these formulas for full finetuning and *LoRA* side by side.
 
 ![LoRA](images/LoRA.png)
@@ -28,10 +30,13 @@ As mentioned previously, *LoRA* is a technique used to reduce the number of para
 
 - **Define the Original Matrix**. Let's say we have an original weight matrix *𝑊* of size *10 × 10*
 . We can initialize it with random values for illustration purposes.
+
 $$
 \ W \in \mathbb{R}^{10 \times 10} \
 $$
+
 - **Decompose into Low-Rank Matrices**. *LoRA* decomposes *W* into two low-rank matrices *A* and *B*, such that ***W ≈ A.B***. Suppose we chose a rank ***r = 2***. Then, *A* will be of size *10 x 2* and *B* of size *2 x 10*.
+
     $$
     \ A \in \mathbb{R}^{10 \times 2} \
     $$
@@ -41,6 +46,7 @@ $$
     The product ***A.B*** will approximate the original matrix ***W***.
 
 - **Initialize and Multiply Matrices**. Let's initialize *W*, *A*, and *B* with random values and then compute the product
+
 $$
  \hat{W} = A \cdot B \ 
 $$
