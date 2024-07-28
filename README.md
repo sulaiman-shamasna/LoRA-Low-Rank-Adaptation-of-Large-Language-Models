@@ -40,6 +40,7 @@ $$
     $$
     \ A \in \mathbb{R}^{10 \times 2} \
     $$
+    
     $$
     \ B \in \mathbb{R}^{2 \times 10} \
     $$
