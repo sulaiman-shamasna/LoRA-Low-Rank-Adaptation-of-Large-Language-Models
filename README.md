@@ -41,10 +41,12 @@ $$
     \ A \in \mathbb{R}^{10 \times 2} \
     $$
 
+    and,
+    
     $$
     \ B \in \mathbb{R}^{2 \times 10} \
     $$
-    
+
     The product ***A.B*** will approximate the original matrix ***W***.
 
 - **Initialize and Multiply Matrices**. Let's initialize *W*, *A*, and *B* with random values and then compute the product
@@ -169,6 +171,7 @@ x.(W + ΔW) = x.W + x.ΔW
 $$
 
 Similarly, we can write the following for *LoRA*:
+
 $$
 x.(W + A.B) = x.W + x.A.B
 $$
