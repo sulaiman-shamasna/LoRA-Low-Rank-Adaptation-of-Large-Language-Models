@@ -37,17 +37,13 @@ $$
 
 - **Decompose into Low-Rank Matrices**. *LoRA* decomposes *W* into two low-rank matrices *A* and *B*, such that ***W ≈ A.B***. Suppose we chose a rank ***r = 2***. Then, *A* will be of size *10 x 2* and *B* of size *2 x 10*.
 
-    $$
-    \ A \in \mathbb{R}^{10 \times 2} \
-    $$
+$$
+\ A \in \mathbb{R}^{10 \times 2} \
+$$
 
-    and,
-    
-    $$
-    \ B \in \mathbb{R}^{2 \times 10} \
-    $$
-
-    The product ***A.B*** will approximate the original matrix ***W***.
+$$
+\ B \in \mathbb{R}^{2 \times 10} \
+$$
 
 - **Initialize and Multiply Matrices**. Let's initialize *W*, *A*, and *B* with random values and then compute the product
 
